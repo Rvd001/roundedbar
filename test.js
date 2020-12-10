@@ -9,23 +9,23 @@ function initializeViz(){
 
   };
 
-function vizFilter(filterName,filterValue,filterType){
-  //getActiveSheet() can be a dashboard or a worksheet
-  sheet=viz.getWorkbook().getActiveSheet();
+// function vizFilter(filterName,filterValue,filterType){
+//   //getActiveSheet() can be a dashboard or a worksheet
+//   sheet=viz.getWorkbook().getActiveSheet();
 
 
-if(sheet.getSheetType() === 'worksheet'){
-sheet.applyFilterAsync(filterName,filterValue,filterType);
-}
-else{
+// if(sheet.getSheetType() === 'worksheet'){
+// sheet.applyFilterAsync(filterName,filterValue,filterType);
+// }
+// else{
 
-worksheetArray = sheet.getWorksheets();
-for(var i =0; i < worksheetArray.length; i++)
-{
-worksheetArray[i].applyFilterAsync(filterName,filterValue,filterType);
-console.log(worksheetArray)
-}
-}
-};
+// worksheetArray = sheet.getWorksheets();
+// for(var i =0; i < worksheetArray.length; i++)
+// {
+// worksheetArray[i].applyFilterAsync(filterName,filterValue,filterType);
+// console.log(worksheetArray)
+// }
+// }
+// };
 
 

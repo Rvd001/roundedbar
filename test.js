@@ -17,14 +17,14 @@ var viz, workbook, activeSheet;
     var vizUrl = 'https://public.tableau.com/views/RoundedBarchart_16073912149450/RoundedBars';
     var vizOptions = {
 
-      width: vizDiv.offsetWidth,
-      height: vizDiv.offsetHeight,
+    //   width: vizDiv.offsetWidth,
+    //   height: vizDiv.offsetHeight,
       hideTabs: true,
       hideToolbar: false,
       onFirstInteractive: function () {
         workbook = viz.getWorkbook();
         activeSheet = workbook.getActiveSheet();
-        
+
       }
     };
     viz = new tableauSoftware.Viz(vizDiv, vizUrl, vizOptions); 

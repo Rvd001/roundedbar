@@ -14,7 +14,8 @@ var viz, workbook, activeSheet;
 
   function initializeViz() {
     var vizDiv = document.getElementById("tableauViz");
-    var vizUrl = 'https://public.tableau.com/views/RoundedBarchart_16073912149450/RoundedBars';
+    //var vizUrl = 'https://public.tableau.com/views/RoundedBarchart_16073912149450/RoundedBars';
+    var vizUrl = "https://public.tableau.com/views/RoundedBarchart_16073912149450/RoundedBars";
     var vizOptions = {
 
     //   width: vizDiv.offsetWidth,

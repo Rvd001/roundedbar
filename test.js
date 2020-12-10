@@ -10,7 +10,7 @@
 //   };
 
 
-
+var viz, workbook, activeSheet;
 
   function initializeViz() {
     var vizDiv = document.getElementById("tableauViz");

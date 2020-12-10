@@ -18,8 +18,8 @@ var viz, workbook, activeSheet;
     var vizOptions = {
       width: placeholderDiv.offsetWidth,
       height: placeholderDiv.offsetHeight,
-      hideTabs: true,
-      hideToolbar: true,
+      hideTabs: false,
+      hideToolbar: false,
       onFirstInteractive: function () {
         workbook = viz.getWorkbook();
         activeSheet = workbook.getActiveSheet();
